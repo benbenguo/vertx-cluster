@@ -1,0 +1,6 @@
+/vertx-cluster/vertx-cluster.iml
+/vertx-cluster/.idea
+/vertx-cluster/http-verticle/http-verticle.iml
+/vertx-cluster/http-verticle/target
+/vertx-cluster/job-verticle/job-verticle.iml
+/vertx-cluster/job-verticle/target
