@@ -4,3 +4,8 @@
 /vertx-cluster/http-verticle/target
 /vertx-cluster/job-verticle/job-verticle.iml
 /vertx-cluster/job-verticle/target
+/vertx-cluster/.vertx
+/vertx-cluster/web-verticle/target
+/vertx-cluster/web-verticle/web-verticle.iml
+/vertx-cluster/vertx-service/target
+/vertx-cluster/vertx-service/vertx-service.iml

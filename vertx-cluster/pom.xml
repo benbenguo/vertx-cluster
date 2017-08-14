@@ -11,6 +11,8 @@
     <modules>
         <module>http-verticle</module>
         <module>job-verticle</module>
+        <module>web-verticle</module>
+        <module>vertx-service</module>
     </modules>
 
     <properties>
@@ -43,7 +45,17 @@
         </dependency>
         <dependency>
             <groupId>io.vertx</groupId>
+            <artifactId>vertx-core</artifactId>
+            <version>${vertx.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.vertx</groupId>
             <artifactId>vertx-hazelcast</artifactId>
+            <version>${vertx.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.vertx</groupId>
+            <artifactId>vertx-web</artifactId>
             <version>${vertx.version}</version>
         </dependency>
     </dependencies>
