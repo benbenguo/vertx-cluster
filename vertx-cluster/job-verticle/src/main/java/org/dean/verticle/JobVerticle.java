@@ -4,6 +4,7 @@ import io.vertx.core.AbstractVerticle;
 import io.vertx.core.Handler;
 import io.vertx.core.eventbus.EventBus;
 import io.vertx.core.eventbus.Message;
+import org.dean.vo.Request;
 
 /**
  * Created by Dean on 2017/8/8.
@@ -22,6 +23,7 @@ public class JobVerticle extends AbstractVerticle {
         return msg -> vertx.executeBlocking(
                 future -> {
                     try {
+                        Request request = (Request)msg.body();
                         System.out.println("working...");
                         future.complete("received");
                     } catch (Exception e) {

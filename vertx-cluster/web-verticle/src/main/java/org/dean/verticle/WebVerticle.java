@@ -51,6 +51,7 @@ public class WebVerticle extends AbstractVerticle {
 
                 // 获取session
                 Session session = routingContext.session();
+                session.id();
                 Integer count = session.get("count");
 
                 if (count == null) {
@@ -60,8 +61,8 @@ public class WebVerticle extends AbstractVerticle {
                 }
 
                 System.out.println("============= " + session.get("count") + " =============");
-                String contentType = req.getHeader("Content-Type");
 
+                String contentType = req.getHeader("Content-Type");
                 Map map = new HashMap();
                 if (contentType.startsWith("application/json")) {
                     JsonObject jsonObject = routingContext.getBodyAsJson();
