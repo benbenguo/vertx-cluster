@@ -16,6 +16,7 @@ import io.vertx.ext.web.handler.SessionHandler;
 import io.vertx.ext.web.sstore.LocalSessionStore;
 import org.dean.service.HttpService;
 
+import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
@@ -72,8 +73,8 @@ public class WebVerticle extends AbstractVerticle {
                 Set files = routingContext.fileUploads();
                 MultiMap multiMap = req.params();
                 Buffer buffer = routingContext.getBody();
-                HttpService service = new HttpService();
-                service.requestJob(vertx, req);
+//                HttpService service = new HttpService();
+//                service.requestJob(vertx, req);
             } else {
                 req.response().setStatusCode(405).end();
             }
